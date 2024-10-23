@@ -1,7 +1,7 @@
 # Docs for the Azure Web Apps Deploy action: https://github.com/Azure/webapps-deploy
 # More GitHub Actions for Azure: https://github.com/Azure/actions
 
-name: Build and deploy PHP app to Azure Web App - RipeTest1
+name: Build and deploy PHP app to Azure Web App - RIPETEST1
 
 on:
   push:
@@ -61,15 +61,15 @@ jobs:
       - name: Login to Azure
         uses: azure/login@v2
         with:
-          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_0CB9CB674E14497F8A77FFD28BC2AEF2 }}
-          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_CA5E6014FBEB49DF96A2AB1380BE0A8D }}
-          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_BF8C1274BA5148FA8AAFAC1CAE1FEA2A }}
+          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_2334DBBC98DD4C16AEDFD83169FC13B7 }}
+          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_0D488AE470FF483E8267EBC37765AD2B }}
+          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_D62A774B5CC34264A0E9ACD38C20E947 }}
 
       - name: 'Deploy to Azure Web App'
         uses: azure/webapps-deploy@v3
         id: deploy-to-webapp
         with:
-          app-name: 'RipeTest1'
+          app-name: 'RIPETEST1'
           slot-name: 'Production'
           package: .
           
